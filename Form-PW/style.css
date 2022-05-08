@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 
+    -1px -1px 0px rgb(241, 241, 241), 
+    -1px 2px 0px rgb(101, 99, 109),                    
+     1px -1px 0px rgb(94, 105, 109),                  
+     1px 0px 0px rgb(146, 146, 141);
+
+    margin-left: 7%;
+
+}
+
+#subtitulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  rgb(26, 26, 27);
+    margin-left: 10%;
+}
+
+#check{
+    margin-top: 4px;
+    display: inline-block;
+
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background: rgb(18,47,94);
+    background: linear-gradient(90deg, rgb(132, 171, 233) 0%, rgb(153, 206, 247) 49%, rgb(171, 179, 247) 100%);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: rgb(3, 3, 3);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: rgb(26, 25, 34);
+    border-radius: 7px;
+    
+}
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo{
+    margin-bottom: 1em;
+
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+
+}
+
+.campo input[type="text"],.campo input[type="date"] ,.campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(17, 0, 17);
+    box-shadow: 2px 2px 2px rgb(163, 36, 163);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background-color: rgba(181, 147, 243, 0.288)
+}
+
+.botao{
+    font-size: 1.2em;
+    background: purple;
+    border: 0;
+    margin-bottom: 1em;
+    color: aliceblue;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(27, 26, 26);
+    text-shadow: 1px 1px 1px rgb(27, 26, 26);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: rgb(62, 2, 117);
+    box-shadow: inset 2px 2px 2px rgb(27, 26, 26);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
