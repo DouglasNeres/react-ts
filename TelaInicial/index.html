@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Inicial</title>
+    <title>Login</title>
 
     <style>
-        *{margin: 0; padding: 0; box-sizing: border-box;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #5f7c8a;
         }
-        form{
+
+        form {
             background-color: white;
             max-width: 500px;
             width: 70%;
-            padding: 20px;
+            padding: 45px;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -23,15 +30,16 @@
             border-radius: 7px;
         }
 
-        form h3{
+        form h3 {
             text-align: center;
-            color : #5f7c8a;
+            color: #5f7c8a;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
+
         }
 
         form input[type=text],
-        form input[type=password]{
+        form input[type=password] {
+            border-radius: 7px;
             width: 100%;
             height: 45px;
             border: 1px solid #ccc;
@@ -39,38 +47,49 @@
             margin: 8px 0;
         }
 
-        form input[type=submit]{
+        .button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form input[type=submit] {
             width: 100%;
-            height: 30px;
+            width: 350px;
+            height: 40px;
             cursor: pointer;
             background: #5f7c8a;
             color: white;
             border: 0;
             border-radius: 20px;
         }
-        form input[type=submit]:hover{
-         background-color: #495b64;   
-         transition: 0.5s;
+
+        form input[type=submit]:hover {
+            background-color: #495b64;
+            transition: 0.5s;
         }
 
-        form input[type=password]:focus{
+        form input[type=password]:focus {
             outline: 0;
 
         }
 
-        form input[type=text]:focus{
+        form input[type=text]:focus {
             outline: 0;
         }
     </style>
 </head>
+
 <body>
 
     <form>
-        <h3>Entrar em contato</h3>
-        <input id="email" type="text"placeholder="Digite seu Email"/>
-        <input type="password" nome="senha" placeholder="Informe sua Senha"/>
-        <input type="submit" nome= "acao" value="Enviar"/>
+        <h3>Entrar em contato</h3><br>
+        <input id="email" type="text" placeholder="Digite seu Email" />
+        <input type="password" nome="senha" placeholder="Informe sua Senha" /><br><br>
+        <div class="button"><input type="submit" nome="acao" value="Enviar" /></div>
     </form>
 
 </body>
+
 </html>
