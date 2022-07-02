@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Login ADMIN</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1b45b9;
+        }
+
+        #Web{
+            margin-top: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            width: 70%;
+            padding: 45px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 7px;
+        }
+
+        form h3 {
+            text-align: center;
+            color: #194077;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        form input[type=text],
+        form input[type=password] {
+            border-radius: 7px;
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 8px 0;
+        }
+
+        .div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            width: 350px;
+            height: 40px;
+            cursor: pointer;
+            background: #194077;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+        }
+
+        .a:hover {
+            transition: 0.5s;
+        }
+
+        form input[type=password]:focus {
+            outline: 0;
+
+        }
+
+        form input[type=text]:focus {
+            outline: 0;
+        }
+
+        .a{
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="Web" class="container">
+            <a class="navbar-brand" href="">
+                <i class="fa fa-book"></i>
+                Web Study's
+            </a>
+        </div>
+
+    <form action="" method="post">
+        <h3>Login ADMIN</h3><br>
+        <input type="text" class="form-control" placeholder="Usuário" id="usuario" aria-label="Usuário" name="admin">
+        <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha"/><br>
+        <div class="div">
+            <button id="button" class="a" type="submit" href="" name="submit" onclick="Login(event)">Entrar</button>
+        </div>
+        </form>
+
+
+        <script src="admin.js"></script>
+</body>
+
+</html>
