@@ -1,4 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
+import Bg1 from '../assets/bg1.png'
+import Bg2 from '../assets/bg2.png'
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -13,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background-color: #F8FDFF;
+        overflow: hidden;
         font-family: 'Poppins', sans-serif;
     }
 

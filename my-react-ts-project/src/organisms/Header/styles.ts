@@ -6,4 +6,7 @@ export const Box = styled.header`
     justify-content: space-between;
     align-items: center;
 
+    img{
+        cursor: pointer;
+    }
 `
