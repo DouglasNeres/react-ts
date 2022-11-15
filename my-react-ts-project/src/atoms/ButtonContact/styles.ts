@@ -11,10 +11,21 @@ export const Container = styled.button`
     border-radius: 100px;
     margin-top: 50px;
     transition: all 0.25s ease-out;
+    animation: animationBtnCtt linear 0.5s forwards;
 
     &:hover{
         background-color: #f8fdff;
         color: #17a4d0;
 
+    }
+
+    @keyframes animationBtnCtt {
+        from{
+            opacity: 0;
+        }   
+
+        to{
+            opacity: 1;
+        }
     }
 `

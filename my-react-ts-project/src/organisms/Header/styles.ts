@@ -9,4 +9,5 @@ export const Box = styled.header`
     img{
         cursor: pointer;
     }
+
 `

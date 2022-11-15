@@ -10,11 +10,23 @@ export const Container = styled.button`
     margin-left: 25px;
     transition: all 0.25s ease-out;
     box-shadow: 0px 0px 17px -8px transparent;
+    animation: animationBtn linear 0.5s forwards;
 
     &:hover{
         color: #fff;
         background-color: #17a4d0;
         box-shadow: 0px 0px 17px -5px #17a4d0;
     }
+
+    @keyframes animationBtn {
+        from{
+            opacity: 0;
+        }   
+
+        to{
+            opacity: 1;
+        }
+    }
+    
 
 `

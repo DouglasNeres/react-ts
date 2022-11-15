@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import Bg1 from '../assets/bg1.png'
 import Bg2 from '../assets/bg2.png'
 
@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         outline: none;
     }
+        
+
 `
 
 export default GlobalStyle

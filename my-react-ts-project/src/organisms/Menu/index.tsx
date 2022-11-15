@@ -17,5 +17,6 @@ export const Menu = () =>{
         <S.ItemList>
         <a href="#">Contact</a>
         </S.ItemList>
+
     </S.MenuList>
 }

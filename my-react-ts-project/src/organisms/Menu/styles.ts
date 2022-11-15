@@ -19,4 +19,5 @@ export const ItemList = styled.li`
         color: #1E255E;
         transition: color 0.25s ease;
     }
+
 `
