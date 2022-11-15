@@ -11,6 +11,10 @@ export const Container = styled.div`
     border-radius: 12px;
     text-align: left;
     overflow: hidden;
+    
+    animation: animationShow 0.5s linear forwards;
+    opacity: 0;
+    top: 50px;
 
     small{
         font-size: 12px;
@@ -74,4 +78,15 @@ i{
     }
 
 }
+
+@keyframes animationShow{
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+            top: 105px;
+        }
+    }
 `
