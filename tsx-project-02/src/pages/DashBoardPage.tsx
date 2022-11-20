@@ -4,7 +4,9 @@ export function DashBoardPage() {
     return (
         <>
             <Nav />
-            <h1>DashBoard</h1>
+            <div className="container">
+                <h1>Dashboard</h1>
+            </div>
         </>
     )
 }
