@@ -1,22 +1,31 @@
-import DatePicker from "react-datepicker"
+import DatePicker, { registerLocale } from "react-datepicker"
 import 'react-datepicker/dist/react-datepicker.css'
 import { Controller, useFormContext } from "react-hook-form"
+import ptBR from 'date-fns/locale/pt-BR'
+registerLocale('ptBR', ptBR)
 
-type Props ={
+type Props = {
   name: string;
 }
 
-export function DateTimePicker({name}: Props) {
+export function DateTimePicker({ name }: Props) {
   const { control } = useFormContext()
 
   return (
     <Controller
-    name={name}
+      name={name}
       control={control}
-      render={({field: {onChange, value}}) => (
-          <DatePicker
-            selected={value}
-            onChange={(date: Date) => onChange(date)}
+      defaultValue={new Date().setMinutes(30)}
+      render={({ field: { onChange, value } }) => (
+        <DatePicker
+          showTimeSelect
+          locale="ptBR"
+          dateFormat="Pp"
+          selected={new Date(value)}
+          onChange={(date: Date) => onChange(date.toISOString())}
+          onKeyDown = {(e) => {
+            e.preventDefault()
+          }}
         />
       )}
 

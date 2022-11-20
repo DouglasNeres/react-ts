@@ -1,15 +1,19 @@
 import { Button, DateTimePicker, Nav, RichInput } from "components";
-import { IIWriteNowForm } from "components/interfaces";
-import { WriteNowResolver } from 'components/validations';
+import { IIWriteNowForm } from "interfaces";
+import { WriteNowResolver } from 'validations';
 import { FormProvider, useForm } from "react-hook-form";
+import { MailServices } from "services";
 
 export function WriteNowPage() {
     const formMethods= useForm<IIWriteNowForm>({ resolver: WriteNowResolver })
-    const { formState: { errors }, register, handleSubmit } = formMethods
+    const { formState: { errors }, register, handleSubmit, reset } = formMethods
 
-    function onSubmit(values:any){
-        console.log(values);
+    async function onSubmit(values: IIWriteNowForm){
+       const { status } = await MailServices.sendEmail(values)
+       if(status === 201){
+        reset()
         
+       }        
     }
 
     return (
