@@ -34,3 +34,7 @@ body {
 .form button{
   @apply mt-4;
 }
+
+.error-text{
+  @apply text-red-600 text-sm py-1;
+}
