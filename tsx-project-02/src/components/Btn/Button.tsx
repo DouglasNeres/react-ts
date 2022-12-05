@@ -13,7 +13,7 @@ export function Button({type = 'button', variant, children }: Props){
     if (variant === 'dark') bgColor = 'bg-primaryDark text-white'
 
     return(
-        <button type={type} className={classNames("py-2 px-4 rounded-md font-bold", bgColor)}>
+        <button type={type} className={classNames("py-2 px-4 rounded-md text-md", bgColor)}>
             {children}
         </button>
     )
