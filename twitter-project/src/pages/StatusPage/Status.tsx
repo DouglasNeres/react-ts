@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from 'phosphor-react'
 import { FormEvent, KeyboardEvent, useState } from 'react'
 import { Header } from '../../components/Header/Header'
 import { Separator } from '../../components/Separator/Separator'
@@ -10,9 +11,7 @@ export function Status(){
   
 const [newAnswer, setNewAnswer] = useState('')
 const [answers, setAnswers] = useState([
-  'Concordo...',
-  'Olha, Faz sentido.'	,
-  'Parabéns pelo progresso.'
+  'Realmente... Concordo por completo.',
 ])
 
 function createNewAnswer(e: FormEvent) {
@@ -33,7 +32,7 @@ function createNewAnswer(e: FormEvent) {
       <main className="status">
         <Header title='Tweet'/>
 
-        <Tweet content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo suscipit asperiores consequatur eius eveniet praesentium laborum recusandae obcaecati alias amet, tenetur, aliquam est magnam officia similique, quasi illum facilis.' />
+        <Tweet content='Ex: Meu primeiro Tweet.' />
         <Separator />
 
         <form onSubmit={createNewAnswer} className='answer-tweet-form'>
@@ -51,8 +50,10 @@ function createNewAnswer(e: FormEvent) {
           </label>
 
           <button 
-          type="submit"
-          >Answer</button>
+          type="submit">
+            <PaperPlaneRight />
+            <span>Answer</span>
+            </button>
         </form>
 
          {

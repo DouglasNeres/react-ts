@@ -10,9 +10,7 @@ let newTweet = ''
 export function Timeline() {
   const [newTweet, setNewTweet] = useState('')
   const [tweets, setTweets] = useState([
-    'Meu primeiro Tweet',
-    'Teste',
-    'Deu Certo'
+    'Ex: Meu primeiro Tweet.'
   ])
 
   function createNewTweet(e: FormEvent) {
@@ -22,7 +20,6 @@ export function Timeline() {
 
   }
 
-  
   function handleHotkeySubmit(e: KeyboardEvent){
     if (e.key === 'Enter' && (e.shiftKey || e.ctrlKey || e.metaKey)) {
       setTweets([newTweet, ...tweets])
