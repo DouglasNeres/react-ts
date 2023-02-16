@@ -8,7 +8,7 @@ import './Timeline.css'
 let newTweet = ''
 
 export function Timeline() {
-
+  const [newTweet, setNewTweet] = useState('')
   const [tweets, setTweets] = useState([
     'Meu primeiro Tweet',
     'Teste',
@@ -18,6 +18,7 @@ export function Timeline() {
   function createNewTweet(e: FormEvent) {
     e.preventDefault()
     setTweets([newTweet, ...tweets])
+    setNewTweet('')
 
   }
 
@@ -31,8 +32,9 @@ export function Timeline() {
           <textarea
             id="tweet"
             placeholder="What's Happening?"
+            value={newTweet}
             onChange={(e) => {
-              newTweet = e.target.value
+              setNewTweet(e.target.value)
 
             }}
           ></textarea>
