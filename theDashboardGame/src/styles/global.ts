@@ -1,10 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  body{
+    background: #000;
   }
 
   button{
@@ -24,3 +28,12 @@ export default createGlobalStyle`
   }
 
 `
+
+export const ColorsTheme = {
+  colors: {
+    white: "#FFFFFF",
+    white20: "rgba(217, 217, 217, 0.15)",
+    red: "#F55859",
+    blue: "#0F81EC"
+  }  
+}

@@ -5,6 +5,8 @@ export const StyledTitle = styled(BaseTitle)`
   font-family: 'Poppins', sans-serif;
   font-weight: ${({ fontWeight }) => fontWeight};
 
+  color: ${({theme}) => theme.colors.white};
+
   ${({ fontSize }) => {
     switch (fontSize) {
       case "lg":
@@ -36,6 +38,8 @@ export const StyledParagraph = styled.p<iStyleParagraph>`
     strong, b{
     font-weight: 700;
   }
+
+  color: ${({theme}) => theme.colors.white};
   
   opacity: ${({opacity}) => opacity ? opacity: .5};
 
