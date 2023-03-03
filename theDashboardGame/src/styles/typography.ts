@@ -61,3 +61,38 @@ export const StyledParagraph = styled.p<iStyleParagraph>`
   }
 }
 `
+
+interface iStyledTag{
+  backgroundColor: "blue" | "red";
+}
+
+export const StyledTag = styled.span<iStyledTag>`
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 34px;
+
+  padding: 0 1.5rem;
+
+  color: ${({theme}) => theme.colors.white};
+
+  border-radius: 6px;
+
+  ${({backgroundColor, theme}) => {
+    switch(backgroundColor){
+      case 'blue':
+        return css`
+          background: ${theme.colors.blue};
+        `
+      case 'red':
+        return css`
+          background: ${theme.colors.red};
+        `
+    }
+  }}
+`

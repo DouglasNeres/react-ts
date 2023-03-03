@@ -17,6 +17,14 @@ export const StyledHeader = styled.header`
       height: 50px;
       object-fit: cover;
     }
+
+    button{
+      color: ${({theme}) => theme.colors.white};
+      transition: .4s;
+      &:hover{
+        color: ${({theme}) => theme.colors.blue};
+      }
+    }
   }
 
   @media (max-width: 600px){
@@ -53,6 +61,14 @@ export const StyledHeaderForm = styled.form`
       color: ${({ theme }) => theme.colors.white50};
     }
    }
+
+   button{
+      color: ${({theme}) => theme.colors.white50};
+      transition: .4s;
+      &:hover{
+        color: ${({theme}) => theme.colors.white};
+      }
+    }
 
    @media (max-width: 600px){
     input{

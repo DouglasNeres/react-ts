@@ -7,14 +7,14 @@ export const Header = () =>{
     <StyledHeader>
       <StyledHeaderForm>
         <button type="submit">
-          <MdSearch size={30} color="rgba(255, 255, 255, .5)" />
+          <MdSearch size={30} />
         </button>
         <input type="text" name="search" id="" placeholder="Buscar..."/>
       </StyledHeaderForm>
 
       <div className='userMenu'>
         <button>
-          <MdNotifications size={30} color="#fff" />
+          <MdNotifications size={30} />
         </button>
         <img src={Avatar} alt="Nome do Usuário" />
       </div>
