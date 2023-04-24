@@ -12,6 +12,12 @@ export const StyledTitle = styled(BaseTitle)`
       case "lg":
         return css`
           font-size: 44px;
+          @media (max-width: 800px){
+            font-size: 36px;
+          }
+          @media (max-width: 420px){
+            font-size: 32px;
+          }
         `
       case "md":
         return css`

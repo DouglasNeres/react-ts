@@ -1,10 +1,11 @@
 import Charizard from '../../assets/charizard.png'
 import { StyledButton } from '../../styles/buttons'
 import { StyledParagraph, StyledTag, StyledTitle } from "../../styles/typography"
+import { StyledBanner } from './style'
 
 export const MainBanner = () => {
   return(
-    <div>
+    <StyledBanner>
       <div className="flexGrid">
         <div className="content">
           <StyledTag backgroundColor="red">RPG</StyledTag>
@@ -22,6 +23,6 @@ export const MainBanner = () => {
           <img src={Charizard} alt="Imagem do Charizard" />
         </div>
       </div>
-    </div>
+    </StyledBanner>
   )
 }
