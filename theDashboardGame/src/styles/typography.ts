@@ -19,6 +19,10 @@ export const StyledTitle = styled(BaseTitle)`
             font-size: 32px;
           }
         `
+      case "slg":
+        return css`
+          font-size: 24px;
+        `  
       case "md":
         return css`
           font-size: 20px;

@@ -1,24 +1,40 @@
 import styled, { css } from "styled-components";
 
-interface iStyledButtonProps{
+interface iStyledButtonProps {
   buttonSize: "sm" | "md" | "lg";
   buttonStyle: "solid" | "outline";
 }
+
+export const StyledIconLink = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.5;
+  transition: 0.4s;
+  &:hover {
+    opacity: 1;
+  }
+`;
 
 export const StyledButton = styled.button<iStyledButtonProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: .6rem;
+  gap: 0.6rem;
 
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
 
   border-radius: 12px;
 
-  transition: .4s;
+  transition: 0.4s;
 
-  ${({buttonSize}) => {
+  ${({ buttonSize }) => {
     switch (buttonSize) {
       case "lg":
         return css`
@@ -40,13 +56,13 @@ export const StyledButton = styled.button<iStyledButtonProps>`
     }
   }}
 
-  ${({buttonStyle, theme}) => {
+  ${({ buttonStyle, theme }) => {
     switch (buttonStyle) {
       case "solid":
         return css`
           background: ${theme.colors.blue};
           color: ${theme.colors.white};
-        `
+        `;
       case "outline":
         return css`
           border: 1px solid ${theme.colors.blue};
@@ -56,7 +72,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
             background: ${theme.colors.blue};
             color: ${theme.colors.white};
           }
-        `
+        `;
     }
   }}
 
@@ -65,5 +81,4 @@ export const StyledButton = styled.button<iStyledButtonProps>`
     filter: brightness(1.1);
     box-shadow: 0px 4px 25px rgba(255, 249, 249, 0.25);
   }
-
-`
+`;

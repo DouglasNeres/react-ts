@@ -5,7 +5,7 @@ interface iBaseTitleProps {
   className?: string;
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   fontWeight: 400 | 700;
-  fontSize: "lg" | "md" | "sm";
+  fontSize: "lg" | "slg" | "md" | "sm";
 }
 
 export const BaseTitle = ({children, className, tag}: iBaseTitleProps) => {
