@@ -1,3 +1,4 @@
+import { GameList } from './components/GameList'
 import { Header } from './components/Header'
 import { MainBanner } from './components/MainBanner'
 import { StyledButton } from './styles/buttons'
@@ -8,6 +9,7 @@ export function App() {
     <div className="App">
       <Header />
       <MainBanner />
+      <GameList />
     </div>
   )
 }
