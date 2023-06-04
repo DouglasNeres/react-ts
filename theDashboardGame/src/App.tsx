@@ -1,8 +1,7 @@
 import { GameList } from './components/GameList'
 import { Header } from './components/Header'
 import { MainBanner } from './components/MainBanner'
-import { StyledButton } from './styles/buttons'
-import { StyledParagraph, StyledTitle } from './styles/typography'
+import { MyGamesList } from './components/MyGameList'
 
 export function App() {
   return (
@@ -10,6 +9,7 @@ export function App() {
       <Header />
       <MainBanner />
       <GameList />
+      <MyGamesList />
     </div>
   )
 }

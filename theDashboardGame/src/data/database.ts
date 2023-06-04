@@ -8,6 +8,10 @@ export interface iGame{
   category: string;
 }
 
+export interface iMyGame extends iGame{
+  install: boolean;
+}
+
 export const gameData: iGame[] = [
   {
     image: Image1,
@@ -28,5 +32,26 @@ export const gameData: iGame[] = [
     image: Image1,
     name: 'Lorem Ipsum Game 4',
     category: 'RPG',
+  },
+]
+
+export const myGameData: iMyGame[] = [
+  {
+    image: Image1,
+    name: 'Lorem Ipsum Game 1',
+    category: 'RPG',
+    install: true,
+  },
+  {
+    image: Image2,
+    name: 'Lorem Ipsum Game 2',
+    category: 'FPS',
+    install: false,
+  },
+  {
+    image: Image3,
+    name: 'Lorem Ipsum Game 3',
+    category: 'Adventure',
+    install: false,
   },
 ]
