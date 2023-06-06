@@ -1,6 +1,7 @@
 import { iMyGame } from "../../../data/database";
 import { StyledButton } from "../../../styles/buttons";
 import { StyledParagraph, StyledTitle } from "../../../styles/typography";
+import { StyledMyGameCard } from "./styles";
 
 interface iMyGameCardProps {
   game: iMyGame;
@@ -8,7 +9,7 @@ interface iMyGameCardProps {
 
 export function MyGameCard({ game }: iMyGameCardProps) {
   return (
-    <li>
+    <StyledMyGameCard>
       <div className="left">
         <img src={game.image} alt={game.name} />
         <div>
@@ -29,6 +30,6 @@ export function MyGameCard({ game }: iMyGameCardProps) {
           <StyledButton buttonStyle="outline" buttonSize="sm">Instalar</StyledButton>
         )}
       </div>
-    </li>
+    </StyledMyGameCard>
   );
 }
