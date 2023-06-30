@@ -1,5 +1,5 @@
-import { iGame } from "../../../data/database";
-import { StyledParagraph, StyledTitle } from "../../../styles/typography";
+import { iGame } from "../../../../data/database";
+import { StyledTitle, StyledParagraph } from "../../../../styles/typography";
 import { StyledGameCard } from "./style";
 
 interface iGameCardProps{

@@ -1,6 +1,6 @@
-import { iMyGame } from "../../../data/database";
-import { StyledButton } from "../../../styles/buttons";
-import { StyledParagraph, StyledTitle } from "../../../styles/typography";
+import { iMyGame } from "../../../../data/database";
+import { StyledButton } from "../../../../styles/buttons";
+import { StyledParagraph, StyledTitle } from "../../../../styles/typography";
 import { StyledMyGameCard } from "./styles";
 
 interface iMyGameCardProps {

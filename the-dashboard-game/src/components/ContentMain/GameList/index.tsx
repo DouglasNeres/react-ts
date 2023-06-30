@@ -1,4 +1,4 @@
-import { gameData } from "../../data/database";
+import { gameData } from "../../../data/database";
 import { GameCard } from "./GameCard";
 import { GameListHeader } from "./GameListHeader";
 import { StyledGameList } from "./style";

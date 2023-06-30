@@ -1,6 +1,6 @@
 import { MdArrowForward } from "react-icons/md";
-import { StyledIconLink } from "../../../styles/buttons";
-import { StyledTitle } from "../../../styles/typography";
+import { StyledIconLink } from "../../../../styles/buttons";
+import { StyledTitle } from "../../../../styles/typography";
 import { StyledMyGameListHeader } from "./styles";
 
 export function MyGameListHeader() {

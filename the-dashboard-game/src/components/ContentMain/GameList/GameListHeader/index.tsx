@@ -1,5 +1,5 @@
-import { StyledIconLink } from "../../../styles/buttons";
-import { StyledTitle } from "../../../styles/typography";
+import { StyledIconLink } from "../../../../styles/buttons";
+import { StyledTitle } from "../../../../styles/typography";
 import { StyledGameListHeader } from "./style";
 import { MdArrowForward } from "react-icons/md";
 export const GameListHeader = () => {

@@ -1,5 +1,5 @@
-import { myGameData } from "../../data/database";
-import { StyledGridBox } from "../../styles/grid";
+import { myGameData } from "../../../data/database";
+import { StyledGridBox } from "../../../styles/grid";
 import { MyGameCard } from "./MyGameCard";
 import { MyGameListHeader } from "./MyGameListHeader";
 import { StyledMyGameList } from "./styles";

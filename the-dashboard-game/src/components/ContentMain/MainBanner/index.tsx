@@ -1,6 +1,6 @@
-import Charizard from '../../assets/charizard.png'
-import { StyledButton } from '../../styles/buttons'
-import { StyledParagraph, StyledTag, StyledTitle } from "../../styles/typography"
+import Charizard from '../../../assets/charizard.png'
+import { StyledButton } from '../../../styles/buttons'
+import { StyledParagraph, StyledTag, StyledTitle } from "../../../styles/typography"
 import { StyledBanner } from './style'
 
 export const MainBanner = () => {

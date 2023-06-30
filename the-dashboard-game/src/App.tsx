@@ -1,17 +1,15 @@
-import { GameList } from './components/GameList'
-import { Header } from './components/Header'
-import { MainBanner } from './components/MainBanner'
-import { MyGamesList } from './components/MyGameList'
-import { Sidebar } from './components/Sidebar'
+import { ContentMain } from "./components/ContentMain";
+import { Header } from "./components/Header";
+import { Leftbar } from "./components/Leftbar";
 
 export function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <Header />
-      <MainBanner />
-      <GameList />
-      <MyGamesList />
+    <div style={{ display: "flex" }}>
+      <Leftbar />
+      <div>
+        <Header />
+        <ContentMain />
+      </div>
     </div>
-  )
+  );
 }
