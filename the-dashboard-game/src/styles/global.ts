@@ -8,7 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: #000;
+    background: radial-gradient(62.04% 59.23% at 51.56% 38.81%, #480505 6.53%, #000 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   button{

@@ -1,15 +1,22 @@
+import { StyledApp } from "./AppStyle";
 import { ContentMain } from "./components/ContentMain";
 import { Header } from "./components/Header";
 import { Leftbar } from "./components/Leftbar";
+import { Rightbar } from "./components/Rightbar";
 
 export function App() {
   return (
-    <div style={{ display: "flex" }}>
-      <Leftbar />
+    <StyledApp>
+      <div className="leftbar">
+        <Leftbar />
+      </div>
       <div>
         <Header />
-        <ContentMain />
+        <div className="subject">
+          <ContentMain />
+          <Rightbar />
+        </div>
       </div>
-    </div>
+    </StyledApp>
   );
 }
