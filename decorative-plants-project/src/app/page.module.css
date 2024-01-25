@@ -1,0 +1,32 @@
+.contentTexts {
+  padding-top: 5rem;
+}
+
+.contentTexts h1 {
+  width: 31.25rem;
+  font-size: 4rem;
+}
+
+.contentTexts p {
+  width: 500px;
+  color: rgba(35, 45, 34, 0.70);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 50px 0;
+}
+
+.contentTexts button {
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #232d22;
+  color: #fff;
+  font-size: .875rem;
+  transition: .2s ease-in-out;
+}
+
+.contentTexts button:hover {
+  background-color: transparent;
+  border: 1px solid #232d22;
+  color: #232d22;
+}

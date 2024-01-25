@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #232D22;
+}
+
+.navbar img {
+  cursor: pointer;
+}
+
+.navTexts {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navTexts ul {
+  display: flex;
+  list-style: none;
+  gap: 1.3rem;
+}
+
+.navTexts li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navTexts button {
+  width: 130px;
+  height: 42px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #232D22;
+  color: #232D22;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: .2s ease-in-out;
+}
+
+.navTexts button:hover {
+  background-color: #232D22;
+  color: #EEF7FB;
+}

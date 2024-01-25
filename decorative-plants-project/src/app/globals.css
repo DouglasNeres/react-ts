@@ -7,4 +7,10 @@
 html,
 body {
   background-color: #EEF7FB;
+  padding: 20px 100px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
