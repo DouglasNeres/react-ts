@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 export const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <Image src={Logo} alt="Logo Kreed" />
+      <Image draggable="false" src={Logo} alt="Logo Kreed" />
       <div className={styles.navTexts}>
         <ul>
           <li>Home</li>

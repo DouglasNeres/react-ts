@@ -1,3 +1,7 @@
+.generalContent {
+  display: flex;
+}
+
 .contentTexts {
   padding-top: 5rem;
 }
@@ -20,7 +24,7 @@
   height: 60px;
   border-radius: 4px;
   background-color: #232d22;
-  color: #fff;
+  color: #EEF7FB;
   font-size: .875rem;
   transition: .2s ease-in-out;
 }
@@ -29,4 +33,12 @@
   background-color: transparent;
   border: 1px solid #232d22;
   color: #232d22;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 6rem;
+  left: 12rem;
 }
